@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+.calculator {
+  border: 1px solid black;
+  width: 100%;
+  max-width: 400px;
+  background-color: #121212;
+  padding: 10px 10px 30px;
+  border-radius: 20px;
+}
+
+.screen {
+  height: 80px;
+  background-color: #121212;
+  color: white;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding: 5px;
+  color: #fefefe;
+  font-size: 25px;
+  margin: 20px 10px 20px;
+}
+
+.keypad {
+  padding: 5px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  flex: auto;
+  margin: 3px;
+  width: 40px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  font-size: 18px;
+}
+
+.num {
+  background-color: #404040;
+  color: #fcfcfc;
+}
+
+.operator {
+  background-color: #ff9c12;
+  color: #fdfcf6;
+}
+
+.reset,
+.toggle-plus-minus,
+.percent-operator {
+  background-color: #b4b4b4;
+  color: #191919;
+}
+
+.double-size {
+  flex-grow: 2;
+  height: auto;
+  border-radius: 30px;
+}
+
+.single-size {
+  flex: 1;
+}
+
+.btn:active {
+  font-size: 14px;
+}
